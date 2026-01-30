@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tech Trivia Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+
+    <div class="header">
+        <img src="image/techtrivia.jpg" alt="logo">
+        <h1>Tech Trivia</h1>
+    </div>
+
+    <form id="quizForm">
+
+        <ol>
+            <li>
+                What is a global network of computers called?
+                <br>
+                <input type="radio" name="q1" value="1"> Internet<br>
+                <input type="radio" name="q1" value="0"> Web browser<br>
+                <input type="radio" name="q1" value="0"> DBMS<br>
+                <input type="radio" name="q1" value="0"> E-commerce
+            </li>
+
+            <li>
+                A wireless network connection to the Internet is called:
+                <br>
+                <input type="radio" name="q2" value="0"> Bluetooth<br>
+                <input type="radio" name="q2" value="1"> Wi-Fi<br>
+                <input type="radio" name="q2" value="0"> WiMAX<br>
+                <input type="radio" name="q2" value="0"> Ethernet
+            </li>
+
+            <li>
+                What does HTML stand for?
+                <br>
+                <input type="radio" name="q3" value="0"> High Text Machine Language<br>
+                <input type="radio" name="q3" value="0"> Hyper Text and Links Markup Language<br>
+                <input type="radio" name="q3" value="1"> Hyper Text Markup Language<br>
+                <input type="radio" name="q3" value="0"> Hyper Text Machine Language
+            </li>
+
+            <li>
+                Who invented the World Wide Web in 1989?
+                <br>
+                <input type="radio" name="q4" value="1"> Tim Berners-Lee<br>
+                <input type="radio" name="q4" value="0"> Charles Babbage<br>
+                <input type="radio" name="q4" value="0"> Blaise Pascal<br>
+                <input type="radio" name="q4" value="0"> Herman Hollerith
+            </li>
+        </ol>
+
+        <button type="button" onclick="checkQuiz()">Submit Quiz</button>
+        <button type="reset">Reset Quiz</button>
+        <h2 id="result"></h2>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
